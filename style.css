@@ -1,5 +1,5 @@
 :root {
-    --Primary-Softblue: hsla(215, 52%, 70%, .5);
+    --Primary-Softblue: hsla(215, 52%, 70%, 1);
     --Primary-Cyan: hsl(178, 100%, 50%);
 
     --Neutral-mainBG-VeryDarkBlue: hsl(217, 54%, 11%);
