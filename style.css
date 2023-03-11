@@ -73,7 +73,7 @@ body p {
     content: "";
     height: 100%;
     width: 100%;
-    background: url(/images/icon-view.svg) no-repeat center , linear-gradient(to bottom, hsl(178, 100%, 50%, .4) , hsl(178, 100%, 50%, .4));
+    background: url(images/icon-view.svg) no-repeat center , linear-gradient(to bottom, hsl(178, 100%, 50%, .4) , hsl(178, 100%, 50%, .4));
     border-radius: 10px;
     position: absolute;
     top: 0;
