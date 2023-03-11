@@ -1,0 +1,142 @@
+:root {
+    --Primary-Softblue: hsla(215, 52%, 70%, .5);
+    --Primary-Cyan: hsl(178, 100%, 50%);
+
+    --Neutral-mainBG-VeryDarkBlue: hsl(217, 54%, 11%);
+    --Neutral-cardBG-VeryDarkBlue: hsl(216, 50%, 16%);
+    --Neutral-line-VeryDarkBlue: hsl(215, 32%, 27%);
+    --Neutral-White: hsl(0, 0%, 100%, 1);
+}
+/*  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family:'Outfit', sans-serif;
+}
+
+body {
+    background-color: var(--Neutral-mainBG-VeryDarkBlue);
+    display: flex;
+    flex-direction: column;
+    height: 100dvh;
+}
+
+main {
+    margin: auto;
+}
+
+footer {
+    margin-bottom: 1em;
+    color: var(--Primary-Softblue);
+}
+
+body p {
+    font-size: 1.8rem;
+    color: var(--Primary-Softblue);
+    line-height: 3rem;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+
+}
+
+.card {
+    max-width: 375px;
+    background-color: var(--Neutral-cardBG-VeryDarkBlue);
+    border-radius: 20px;
+    padding: 3em;
+    box-shadow: 0 30px 0 10px hsl(217, 54%, 11%),
+                0 30px 0 50px hsla(215, 51%, 16%, 0.1);
+
+}
+
+.card-img img {
+    max-width: 100%;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.card-img {
+    position: relative;
+    max-height: 315px;
+    cursor: pointer;
+}
+
+.card-img::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: url(/images/icon-view.svg) no-repeat center , linear-gradient(to bottom, hsl(178, 100%, 50%, .4) , hsl(178, 100%, 50%, .4));
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all .3s;
+}
+
+.card-img:hover::after {
+    opacity: 1;
+}
+
+h1 {
+    margin-top: 1em;
+    color: var(--Neutral-White);
+    font-size: 2.6rem;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+h1:hover {
+    color: var(--Primary-Cyan);
+}
+
+.card-txt > p {
+    margin: 1em 0;
+}
+
+.data {
+    justify-content: space-between;
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+    border-bottom: solid 0.0625rem var(--Neutral-line-VeryDarkBlue);
+}
+
+.eth {
+    color: var(--Primary-Cyan);
+    font-size: 1.8rem;
+}
+
+.time {
+    color: var(--Primary-Softblue);
+    font-size: 1.8rem;
+}
+
+.data img {
+    height: 2rem;
+    margin-right: 0.3em;
+}
+
+.creator img {
+    max-height: 4rem;
+    border: 0.0625rem solid var(--Neutral-White);
+    border-radius: 50%;
+    margin-right: 1.6em;
+}
+
+span {
+    color: var(--Neutral-White);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+span:hover {
+    color: var(--Primary-Cyan);
+}
